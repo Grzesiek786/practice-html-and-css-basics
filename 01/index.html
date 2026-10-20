@@ -7,6 +7,65 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+        <!-- logo -->
+        <img src="#" alt="logo strony" >
+        <nav>
+            <!-- Menu -->
+            <li>Start</li>
+            <li>Kursy</li>
+            <li>Kontakt</li>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Tytuł</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt perferendis, 
+                animi suscipit optio delectus atque! Fugit modi consequatur hic ullam.</p>
+            <span>data publikacji</span> <em>autor</em>
+            <!-- ilustracja -->
+            <figure>
+                <img src="#" alt="obraz ilustracji">
+                <figcaption>Obraz ilustracji <em>autor</em></figcaption>
+            </figure>
+            <!-- tabelka -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <form action="/zapisz-komentarz" method="POST">
+            <!-- wpisz imię -->
+            <div>
+                <label for="autor">Twój Nick</label><br>
+                <input type="text" id="autor" name="autor" placeholder="Wpisz swoje imię" required>
+            </div>
+            <br>
+            <!-- wpisanie na treść komentarza -->
+             <div>
+                <label for="tresc-komentarza">Komentarz:</label><br>
+                <textarea name="komentarz" id="tresc-komentarza" rows="5" cols="40" placeholder="Wpisz komentarz" required></textarea>
+             </div>
+
+             <br>
+
+             <!-- Przycisk wysyłania -->
+              <button type="submit">Dodaj komentarz</button>
+        </form>
+    </main>
+    <!-- stopka -->
+    <footer>&copy; Strona HTML & CSS Grzegorz Sumara</footer>
 </body>
 </html>
