@@ -1,0 +1,34 @@
+.parent {
+  min-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+
+.parent--inline-block > .child {
+  display: inline-block;
+}
+
+.parent--float > .child {
+  float: left;
+}
+
+.parent--flexbox {
+  display: flex;
+}
+
+.parent--inline-block >
+.child--first,
+.child--middle {
+  width: 30%;
+  padding-right: 10px;
+}
+
+.parent--inline-block >
+.child--last {
+  width: 39%;
+}
+
+.inblox > ch {
+  display: flex;
+}
