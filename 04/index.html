@@ -10,7 +10,19 @@
 <body>
   <ul class="nav">
     <li class="nav__item">Home</li>
-    <li class="nav__item">Items</li>
+    <li class="nav__item nav__item--dropdown">
+      Items
+      <ul class="nav__dropdown dropdown">
+        <li class="dropdown__item">Item 1</li>
+        <li class="dropdown__item dropdown__item--nested">
+          Item 2
+          <ul class="submenu">
+            <li class="submenu-item">Item 2.1</li>
+            <li class="submenu-item">Item 2.2</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
     <li class="nav__item">Settings</li>
     <li class="nav__item">Contact</li>
   </ul>

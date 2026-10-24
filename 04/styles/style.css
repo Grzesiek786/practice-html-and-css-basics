@@ -3,24 +3,25 @@ body {
 }
 
 .nav, .nav__item {
-  outline: 1px solid;
   margin: 3px;
   padding: 3px;
+  outline: 1px solid;
 }
 
 .nav {
-  outline-color: red;
-  display: flex;
   background-color: white;
+  display: flex;
+  outline-color: red;
+  box-sizing: border-box;
 }
 
 .nav__item {
-  outline-color: green;
-  text-transform: uppercase;
+  border: 3px solid transparent;
   font-size: 18px;
+  text-transform: uppercase;
   margin-right: 10px;
+  outline-color: green;
   padding: 5px 10px;
-  border-top: 3px solid transparent;
 }
 
 .nav__item:hover {
@@ -29,4 +30,30 @@ body {
 
 .nav__item:last-child {
   margin-right: 0;
+}
+
+.nav__dropdown,
+.submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 56px;
+  left: 100px;
+  outline: 1px solid red;
+}
+
+.dropdown__item--nested {
+  outline: 1px solid blue;
+}
+
+.submenu {
+  top: 34px;
+  left: 202px;
+}
+
+.dropdown__item,
+.submenu-item {
+  background-color: lightgray;
+  padding: 5px 20px;
+  min-width: 200px;
 }
