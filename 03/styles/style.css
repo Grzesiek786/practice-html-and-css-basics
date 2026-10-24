@@ -7,31 +7,46 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Sourse Sans Pro';
+  src: url(./source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+  font-style: normal;
+  font-weight: bold;
+}
+
 .parent {
   min-width: 600px;
   padding: 20px;
   outline: 1px solid red;
 }
 
+.child--first,
+.child--middle,
+.child--last {
+  font-family: 'Source Sans Pro';
+}
+
+.child--first {
+  font-weight: 300;
+}
+
+.child--middle {
+  font-weight: bold;
+}
+
+.child--last {
+  font-style: italic;
+}
+
+/* Inline-block */
 .parent--inline-block {
   font-size: 0;
 }
 
 .parent--inline-block > .child {
   display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
   font-size: 16px;
   outline: 1px solid green;
-}
-
-.parent--float > .child {
-  float: left;
-  outline: 1px solid green;
-}
-
-.parent--flexbox {
-  display: flex;
 }
 
 .parent--inline-block >
@@ -44,4 +59,15 @@
 .parent--inline-block >
 .child--last {
   width: 40%;
+}
+
+/* Float */
+.parent--float > .child {
+  float: left;
+  outline: 1px solid green;
+}
+
+/* Flexbox */
+.parent--flexbox {
+  display: flex;
 }
