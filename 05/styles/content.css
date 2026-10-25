@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__article,
+.content__ads {
+  width: 50%;
+}
