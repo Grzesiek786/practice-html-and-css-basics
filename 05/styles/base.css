@@ -11,12 +11,13 @@
 }
 
 .container {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 1200px;
   outline-color: blue;
 }
 
 .cell {
-  min-height: 50px;
   outline-color: orange;
 }

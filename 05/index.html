@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/reset.css">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/base.css">
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/content.css">
+  <link rel="stylesheet" href="./styles/card.css">
   <link rel="stylesheet" href="./styles/footer.css">
   <title>Układ strony</title>
 </head>
@@ -24,8 +25,18 @@
         <aside class="content__ads cell"></aside>
       </div>
     </section>
-    <section class="content row"></section>
+    <section class="card row">
+      <div class="card__container container">
+        <article class="card__article cell"></article>
+        <article class="card__article cell"></article>
+        <article class="card__article cell"></article>
+      </div>
+    </section>
   </main>
-  <footer class="row"></footer>
+  <footer class="footer row">
+    <div class="footer__container container">
+      <section class="footer__copyrights cell"></section>
+    </div>
+  </footer>
 </body>
 </html>
