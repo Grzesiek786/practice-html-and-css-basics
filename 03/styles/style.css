@@ -5,7 +5,7 @@
 @font-face {
   font-family: 'Sourse Sans Pro';
   src: url(./source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
-  font-style: normal;
+  font-style: 500;
   font-weight: bold;
 }
 
@@ -35,7 +35,7 @@
 
 .child--first,
 .child--middle {
-  width: 30%;
+  width: calc(30% - 10px);
   padding-right: 10px;
 }
 
@@ -50,6 +50,12 @@
 }
 
 /* Float */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .parent--float > .child {
   float: left;
 }
