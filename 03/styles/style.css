@@ -19,7 +19,6 @@
 }
 
 .child--middle {
-  font-weight: 700;
   font-style: bold;
 }
 
@@ -32,7 +31,6 @@
 .child--first,
 .child--middle {
   width: calc(30% - 10px);
-  padding-right: 10px;
 }
 
 /* Inline-block */
